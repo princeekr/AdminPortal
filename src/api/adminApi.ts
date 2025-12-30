@@ -2,7 +2,7 @@ import { Registration } from "../types";
 
 export const fetchRegistrations = async (): Promise<Registration[]> => {
   const response = await fetch(
-    "http://localhost:5001/api/admin/registrations"
+    "/api/registrations"
   );
 
   if (!response.ok) {
